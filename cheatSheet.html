@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>CSS selectors and specificity</title>
+        <link rel="stylesheet" type="text/css" href="cheatSheet.css">
+    </head>
+    <body>
+      <header>
+          <nav>
+            <img src="https://smallimg.pngkey.com/png/small/141-1415392_css3-css-logo-transparent-background.png" class="logo"/>
+              <ul>
+                  <li><a href="https://www.codecademy.com/catalog/language/html-css?g_acctid=243-039-7011&g_keywordid=kwd-79577586511721:loc-188&g_adid=&g_keyword=codecademy%20css&g_campaign=INTL_Brand_Exact&g_adtype=search&g_network=o&g_adgroupid=1273235171606620&g_campaignid=370028894&utm_id=t_kwd-79577586511721:loc-188:ag_1273235171606620:cp_370028894:n_o:d_c&hsa_acc=2430397011&hsa_cam=1726903838&hsa_grp=1273235171606620&hsa_ad=&hsa_src=o&hsa_tgt=kwd-79577586511721:loc-188&hsa_kw=codecademy%20css&hsa_mt=e&hsa_net=adwords&hsa_ver=3&msclkid=91196566f72e167f029104fbf89a4f1b&utm_source=bing&utm_medium=cpc&utm_campaign=INTL_Brand_Exact&utm_term=codecademy%20css&utm_content=Codecademy%20HTML%20%26%20CSS">Learn CSS</a></li>
+                  <li><a href="#basicSelectorsTH" id="navbar">CSS Selectors</a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/">Newsroom</a></li>  
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <section class="openingParagraph">
+              <article class="openingArticle">
+                  <h1>Control How Your Website Looks</h1>
+                  <p>Cascading Style Sheets (CSS) are an important way to control how your web pages look. CSS controls the fonts, text, colors, backgrounds, margins, and layout. CSS offers several significant advantages over alternative approaches to web design.</p>
+              </article>
+          </section>
+          <section class="learnCSS">
+              <img src="https://www.munjhu.com/wp-content/uploads/2021/02/jasa-website-munjhu.jpg" class="websitePic"/>
+            </section>
+            <section class="tableSection">
+              <table>
+                <thead>
+                    <tr>
+                      <th colspan="6" id="basicSelectorsTH">Basic Selectors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <th>Universal selector</th>
+                      <td>Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces.</td>
+                      <th> Syntax:</th>
+                      <td><span>* ns|* *|*</span></td>
+                      <th>Example: </th>
+                      <td><span>* will</span> match all the elements of the document.</td>
+                    </tr>
+                    <tr>
+                      <th>Type selector</th>
+                      <td>Selects all elements that have the given node name.</td>
+                      <th>Syntax:</th>
+                      <td><span>elementname</span></td>
+                      <th>Example: </th>
+                      <td><span>input</span> will match any <span>&lt;input&gt;</span> element.</td>
+                    </tr>
+                    <tr>
+                      <th>Class selector</th>
+                      <td>Selects all elements that have the given class attribute.</td>
+                      <th>Syntax:</th>
+                      <td><span>.classname</span></td>
+                      <th>Example: </th>
+                      <td><span>.index</span> will match any element that has a class of "index".</td>
+                    </tr>
+                    <tr>
+                      <th>ID selector</th>
+                      <td>Selects an element based on the value of its id attribute. There should be only one element with a given ID in a document.</td>
+                      <th>Syntax:</th>
+                      <td><span>#idname</span></td>
+                      <th>Example: </th>
+                      <td><span>#toc</span> will match the element that has the ID "toc".</td>
+                    </tr>
+                    <tr>
+                      <th>Attribute selector</th>
+                      <td>Selects all elements that have the given attribute.</td>
+                      <th>Syntax:</th>
+                      <td><span>[attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]</span></td>
+                      <th>Example:</th>
+                      <td><span>[autoplay]</span> will match all elements that have the autoplay attribute set (to any value).</td>
+                    </tr>
+                </tbody>
+              </table>
+            </section>
+      </main>
+      <footer> <a href="#navbar">Back to the Top</a> <br> Created By Ruzanna  <br> <p>Reference:&nbsp;&nbsp;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors</p></footer>
+    </body>
+</html>
