@@ -44,8 +44,12 @@ table {
     width: 80%;
     border-collapse: collapse;
     margin: 0 auto;
+    margin-top: 25px;
 }
 #basicSelectorsTH {
+    font-size: 25px;
+}
+#specificityTH {
     font-size: 25px;
 }
 th {

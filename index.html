@@ -13,6 +13,7 @@
               <ul>
                   <li><a href="https://www.codecademy.com/catalog/language/html-css?g_acctid=243-039-7011&g_keywordid=kwd-79577586511721:loc-188&g_adid=&g_keyword=codecademy%20css&g_campaign=INTL_Brand_Exact&g_adtype=search&g_network=o&g_adgroupid=1273235171606620&g_campaignid=370028894&utm_id=t_kwd-79577586511721:loc-188:ag_1273235171606620:cp_370028894:n_o:d_c&hsa_acc=2430397011&hsa_cam=1726903838&hsa_grp=1273235171606620&hsa_ad=&hsa_src=o&hsa_tgt=kwd-79577586511721:loc-188&hsa_kw=codecademy%20css&hsa_mt=e&hsa_net=adwords&hsa_ver=3&msclkid=91196566f72e167f029104fbf89a4f1b&utm_source=bing&utm_medium=cpc&utm_campaign=INTL_Brand_Exact&utm_term=codecademy%20css&utm_content=Codecademy%20HTML%20%26%20CSS">Learn CSS</a></li>
                   <li><a href="#basicSelectorsTH" id="navbar">CSS Selectors</a></li>
+                  <li><a href="#specificityTH" id="navbar">CSS specificity</a></li>
                   <li><a href="https://developer.mozilla.org/en-US/">Newsroom</a></li>  
               </ul>
           </nav>
@@ -76,6 +77,44 @@
                       <td><span>[autoplay]</span> will match all elements that have the autoplay attribute set (to any value).</td>
                     </tr>
                 </tbody>
+              </table>
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="4" id="specificityTH">Specificity</th>
+                  </tr>
+                  <tr>
+                    <th colspan="4">The following list of selector types increases by specificity</th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <th>Universal selector <span>(*)</span></th>
+                      <td rowspan="3">Have no effect on specificity</td>
+                    </tr>
+                    <tr>
+                      <th>Combinators <span>(+, >, ~, ' ', ||)</span></th>
+                    </tr>
+                    <tr>
+                      <th>Negation pseudo-class <span>(:not())</span></th>
+                    </tr>
+                    <tr>
+                      <th>Type selectors</th>
+                    <td>(e.g., <span>h1</span>) and pseudo-elements (e.g., <span>::before</span>).</td>
+                  </tr>
+                  <tr>
+                    <th>Class selectors</th>
+                    <td>(e.g., <span>.example</span>), attributes selectors (e.g., <span>[type="radio"]</span>) and pseudo-classes (e.g., <span>:hover</span>).</td>
+                  </tr>
+                  <tr>
+                    <th>ID selectors</th>
+                    <td>(e.g., <span>#example</span>).</td>
+                  </tr>
+                  <tr>
+                    <th>The <span>!important</span> exception</th>
+                    <td>This declaration overrides any other declarations. More details <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">here</a></td>
+                  </tr>
+                  </tbody>
+                </thead>
               </table>
             </section>
       </main>
